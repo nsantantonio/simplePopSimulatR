@@ -4,18 +4,20 @@
 \alias{genotype}
 \title{genotype function}
 \usage{
-genotype(seqMat, markers)
+genotype(pop, loci = NULL, simplify = TRUE)
 }
 \arguments{
-\item{seqMat}{[value]}
+\item{pop}{[value]}
 
-\item{markers}{[value]}
+\item{loci}{[value]}
+
+\item{simplify}{[value]}
 }
 \value{
 [value]
 }
 \description{
-function to (do something)
+function to genotype a population.
 }
 \details{
 [fill in details here]

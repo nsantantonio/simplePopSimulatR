@@ -19,6 +19,7 @@ antMapR <- function(M, nCore = 1, ...) {
 		sol <- list()
 		for(i in 1:length(M)){
 			sol[[i]] <- antColonyTSP(mDist[[i]], returnToStart = FALSE, ...)
+			print(sol[[i]])
 		}
 	}
 	sol

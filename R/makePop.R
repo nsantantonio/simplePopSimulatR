@@ -17,7 +17,7 @@ makePop <- function(f1, popSize = 100, type = "BC", gen = 6){
 	if(type %in% c("RIL", "outcross")){
 		f <- 2
 		while(f <= gen){
-			pop <- if(type == "RIL") lapply(pop, cross) else randomIntermate(pop)
+			pop <- if(type == "RIL") lapply(pop, cross) else mate(pop)
 			f <- f + 1
 		}	
 	}

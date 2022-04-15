@@ -4,19 +4,19 @@
 \alias{cross}
 \title{cross function}
 \usage{
-cross(geno1, geno2 = NULL, DH = FALSE, BC = FALSE)
+cross(ind1, ind2 = NULL, DH = FALSE, BC = FALSE)
 }
 \arguments{
-\item{geno1}{[value]}
+\item{ind1}{list. list of a single individual's chromosomes. Chromosomes should be matrices of logical values with 2 coulmns}
 
-\item{geno2}{[value]. Default is NULL}
+\item{ind2}{list. Same as ind1, if ind2 = NULL, then ind1 is crossed to itself (i.e. selfed).}
 
-\item{DH}{[value]. Default is FALSE}
+\item{DH}{logical. Should a doubled haploid be produced?}
 
-\item{BC}{[value]. Default is FALSE}
+\item{BC}{logical. Should a doubled haploid be produced?}
 }
 \value{
-[value]
+returns an individual resulting from a cross of ind1 and ind2.
 }
 \description{
 function to (do something)

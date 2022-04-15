@@ -7,18 +7,18 @@
 pollinate(gamete1, gamete2 = NULL)
 }
 \arguments{
-\item{gamete1}{[value]}
+\item{gamete1}{list. List of haploid chromosomes, where chromosomes have 1 column.}
 
-\item{gamete2}{[value]. Default is NULL}
+\item{gamete2}{list. Same as gamete1. If gamete2 = NULL, then}
 }
 \value{
-[value]
+a list of chromosomes for 1 individual formed from the gametes provided.
 }
 \description{
-function to (do something)
+Make individual from gametes.
 }
 \details{
-[fill in details here]
+none
 }
 \examples{
 none
