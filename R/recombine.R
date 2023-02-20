@@ -9,7 +9,7 @@
 #' @details [fill in details here]
 #' @examples none
 #' @export
-recombine <- function(chrom, trackRecomb = FALSE, force1recomb = FALSE){
+recombine <- function(chrom, trackRecomb = FALSE, force1recomb = TRUE){
 	cM <- nrow(chrom)
 	recomb <- c(as.logical(rpois(cM - 1, (cM -1) / 1e4)), FALSE)
 	if(force1recomb) while(!any(recomb)) recomb <- c(as.logical(rpois(cM - 1, (cM -1) / 1e4)), FALSE)
